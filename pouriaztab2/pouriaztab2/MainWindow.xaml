@@ -1,0 +1,68 @@
+﻿<Window x:Class="pouriaztab2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pouriaztab2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="450">
+    <StackPanel Background="AliceBlue">
+        <StackPanel  Orientation="Horizontal">
+            <Button Content="tab.1" Margin="0 0 0 0" Width="80" Height="20"/>
+            <Button Content="tab.2" Margin="0 0 0 0" Width="80" Height="20"/>
+            <TextBlock Text="Choose tab" FontWeight="DemiBold" Height="15" Margin="150 0 0 0"/>
+        </StackPanel>
+
+        <Border Padding="10 20 10 20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0"  Text="Name  " FontSize="14" FontWeight="Bold"/>
+                <TextBox Grid.Column="1" />
+            </Grid>
+        </Border>
+        <Border Padding="10 20 10 20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0"  Text="Family " FontSize="14" FontWeight="Bold"/>
+                <TextBox Grid.Column="1" />
+            </Grid>
+        </Border>
+        <Border Padding="10 20 10 20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0"  Text="Age    " FontSize="14" FontWeight="Bold"/>
+                <TextBox Grid.Column="1" />
+            </Grid>
+        </Border>
+        <Border Padding="10 20 10 20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0"  Text="Equations   :" FontSize="14" FontWeight="Bold"/>
+                <TextBox Grid.Column="1" Height="100" />
+            </Grid>
+        </Border>
+        <Border Padding="0 95 0 0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Content="Show a picture" Grid.Column="1"/>
+            </Grid>
+        </Border>
+
+    </StackPanel>
+</Window>
